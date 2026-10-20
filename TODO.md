@@ -16,7 +16,7 @@ Old code: `~/lab/hydrophobic-plates-analysis` · Old results: `~/lab/hp-results`
 ## Folders
 - [x] `utils/`: done (committed by you)
 - [x] `gist-preprocessing/plates_gist_input_notes.md`
-- [ ] `gZ/`: 4 notebooks drafted in `~/lab/claude-temp/drafts/gZ/`, waiting on `GZ_DATA_DIR`
+- [x] `gZ/`: 4 notebooks added (`GZ_DATA_DIR` still a placeholder, see above)
 - [ ] `one-plate/`: compute_rdf, gZ-one-plate-plot
 - [ ] `gist-preprocessing/`: gist_sbatch_cpptraj_input, gist_sparsing, gist_output_edge_removing.py, makedx.bash
 - [ ] `Eww-sw-interaction/`: gistpp_Eww_calculation_09-04, gist-interactionEnergy-Eww-Esw-calculation
@@ -30,6 +30,7 @@ Old code: `~/lab/hydrophobic-plates-analysis` · Old results: `~/lab/hp-results`
 - [ ] `energy-analysis/`: df-energy-plotting, read_results_DataFrame
 
 ## Housekeeping
+- [ ] **Make the GitHub repo private** before generating/committing data (Settings → General → Danger Zone → Change visibility)
 - [ ] PC: `git clone git@github.com:arghavanvg/hydrophobic-plates.git` in `/gibbs/arghavan`
 - [ ] Send the PC file listing (`pc_dirs.txt`, `pc_files.txt`) to `~/lab/claude-temp/`
 - [ ] Sort loose old results: `hp-results/` (pmf.png, contribution.png, hp-data.csv, .dx files), `hp-results-pc/plots/`
