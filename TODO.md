@@ -6,7 +6,7 @@ Old code: `~/lab/hydrophobic-plates-analysis` · Old results: `~/lab/hp-results`
 - [ ] **gZ**: set `GZ_DATA_DIR` (PC path of the `<d>.out` files) in all 4 notebooks.
 - [ ] **gZ**: write code that creates the `<d>.out` files (currently made manually; 2 columns: x, summed O count per 170×170 y-z slab).
 - [ ] **gZ / one-plate-interference**: add the second "6–15 Å" cell (zero-density fix with `tol`; old `gZ_plot.ipynb` cell 11).
-- [ ] **gZ**: the 3 interference notebooks need `one-plate/results_pc/gZ-one-plate-300K-averaged-left/right.dat` (comes from migrating `one-plate/`).
+- [ ] **one-plate**: put the original `gZ-one-plate-300K-leftSide.dat` / `-rightSide.dat` in `one-plate/results_pc/`, then run `one-plate-average-gZ.py` (makes `one-plate-gZ-averaged-left/right.dat`, needed by the 3 gZ interference notebooks).
 - [ ] **utils/add-pptx.ipynb**: image folders still point to Dropbox; switch to the new `gZ/results_pc/...` folders, and decide laptop vs PC.
 - [ ] **utils/no_wat.py**: may be repetitive; drop later?
 - [ ] **water-count**: add the number-of-waters plot (old `add-pptx.ipynb` cells 2–3).
@@ -17,7 +17,7 @@ Old code: `~/lab/hydrophobic-plates-analysis` · Old results: `~/lab/hp-results`
 - [x] `utils/`: done (committed by you)
 - [x] `gist-preprocessing/plates_gist_input_notes.md`
 - [x] `gZ/`: 4 notebooks added (`GZ_DATA_DIR` still a placeholder, see above)
-- [ ] `one-plate/`: compute_rdf, gZ-one-plate-plot
+- [x] `one-plate/`: one-plate-average-gZ.py, one-plate-peaks.ipynb, bulk-water-rdf.ipynb
 - [ ] `gist-preprocessing/`: gist_sbatch_cpptraj_input, gist_sparsing, gist_output_edge_removing.py, makedx.bash
 - [ ] `Eww-sw-interaction/`: gistpp_Eww_calculation_09-04, gist-interactionEnergy-Eww-Esw-calculation
 - [ ] `neighbors/`: gist_nbrs.bash
