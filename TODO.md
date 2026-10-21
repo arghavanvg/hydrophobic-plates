@@ -3,6 +3,8 @@
 Old code: `~/lab/hydrophobic-plates-analysis` · Old results: `~/lab/hp-results` (laptop), `/gibbs/arghavan/hp-results-pc` (PC)
 
 ## To adjust later
+- [ ] **gist-preprocessing**: set `GIST_DIR` (folder with `gist_results/<d_A>/`) in `gist-remove-edges.py` and `gist-makedx.bash`.
+- [ ] **gist-preprocessing**: set `GZ_GIST_DIR` (folder with `300K_<d_nm>/gZ-output.dat`) in `gist-crop-between-plates.py`.
 - [ ] **gZ**: set `GZ_DATA_DIR` (PC path of the `<d>.out` files) in all 4 notebooks.
 - [ ] **gZ**: write code that creates the `<d>.out` files (currently made manually; 2 columns: x, summed O count per 170×170 y-z slab).
 - [ ] **gZ / one-plate-interference**: add the second "6–15 Å" cell (zero-density fix with `tol`; old `gZ_plot.ipynb` cell 11).
@@ -11,14 +13,14 @@ Old code: `~/lab/hydrophobic-plates-analysis` · Old results: `~/lab/hp-results`
 - [ ] **utils/no_wat.py**: may be repetitive; drop later?
 - [ ] **water-count**: add the number-of-waters plot (old `add-pptx.ipynb` cells 2–3).
 - [ ] **Shared code**: duplicated functions (`load_trajectory`, `get_plate_boundaries`, `count_waters_per_frame` in both water counters; `emit` in 4 files).
-- [ ] **.gitignore**: add rules for large outputs (`.dx`, trajectories) before committing results.
+- [ ] **.gitignore**: add rules for large outputs (`.dx`, trajectories, `gist-preprocessing/results_pc/gist-plates-*/`) before committing results.
 
 ## Folders
 - [x] `utils/`: done (committed by you)
 - [x] `gist-preprocessing/plates_gist_input_notes.md`
 - [x] `gZ/`: 4 notebooks added (`GZ_DATA_DIR` still a placeholder, see above)
 - [x] `one-plate/`: one-plate-average-gZ.py, one-plate-peaks.ipynb, bulk-water-rdf.ipynb
-- [ ] `gist-preprocessing/`: gist_sbatch_cpptraj_input, gist_sparsing, gist_output_edge_removing.py, makedx.bash
+- [x] `gist-preprocessing/`: make-gist-jobs.py, gist-crop-between-plates.py, gist-remove-edges.py, gist-makedx.bash, plates_gist_input_notes.md
 - [ ] `Eww-sw-interaction/`: gistpp_Eww_calculation_09-04, gist-interactionEnergy-Eww-Esw-calculation
 - [ ] `neighbors/`: gist_nbrs.bash
 - [ ] `hbonds/`: no code in old repo (results in `hp-results/hbond_data`)
